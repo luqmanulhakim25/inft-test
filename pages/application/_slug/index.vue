@@ -180,6 +180,7 @@ export default {
       this.form.uuid = uuid;
       if (this.state.isValid) {
         this.$store.dispatch("onCreate", this.form);
+        this.$router.push("/");
       }
     },
   },
