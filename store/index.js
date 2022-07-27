@@ -4,7 +4,7 @@ export const state = () => ({
 
 export const mutations = {
   ADD_ITEM(state, payload) {
-    state.applications.push(payload);
+    state.applications.unshift(payload);
   },
   REFRESH_ITEM(state) {
     state.applications = [];
